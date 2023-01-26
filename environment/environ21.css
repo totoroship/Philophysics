@@ -1,0 +1,184 @@
+@import 'https://fonts.googleapis.com/css?family=Oswald';
+body {
+  background: #005C97;
+  background: linear-gradient(to bottom, #536f81,navy,rgb(10, 10, 102),rgb(2, 2, 39));
+  height: 100%;
+  width: 100%;
+  display: flex;
+  font-family: "Oswald", sans-serif;
+ 
+}
+html{
+  background-repeat: no-repeat;
+  overflow-y: scroll;
+  overflow-x: scroll;
+}
+
+.water-fill {
+  animation: wave 0.8s infinite linear, fill-up 10s infinite ease-out alternate;
+}
+.wave{
+    z-index: 1;
+    justify-content: center;
+    margin-top: 5%;
+    height: 100px;
+    width:100px;
+    margin-left: 5%;
+    letter-spacing: 6px;
+}
+
+@keyframes wave {
+    0% {
+      x: -400px;
+    }
+    100% {
+      x: 0;
+    }
+  }
+  @keyframes fill-up {
+    0% {
+      height: 0;
+      y: 130px;
+    }
+    100% {
+      height: 160px;
+      y: -30px;
+    }
+  }
+h3{
+  font-size: 65px;
+  margin-left: 40px;
+  margin-bottom: 0;
+}
+h4{
+    letter-spacing: 6px;
+    margin-left:48px;
+    margin-top: 0;
+    font-size: 20px;
+}
+.sum{
+  margin-top: 18%;
+}
+h5{
+  opacity:1;
+  transition-duration: 1s;
+  letter-spacing: 4px;
+  font-size: 20px;
+  color: aliceblue;
+  margin-top: -60%;
+  margin-left: 10%;
+}
+h6{
+  opacity: 0;
+  transition-duration: 1s;
+  letter-spacing: 4px;
+  font-size: 20px;
+  text-align: right;
+  margin-top: -55%;
+  margin-right: 10%;
+  color: aliceblue;
+}
+pre{
+    margin-top: 40px;
+    margin-left: 37px;
+    font-weight: 500;
+    font-size: 20px;
+    font-family: sans-serif;
+    line-height: 33px;
+}
+.first{
+
+    z-index: 3;
+    opacity: 0.83;
+    color: rgb(34, 31, 31);
+    border-radius:20px 40px;
+    height: 1765px;
+    width: 1140px;
+    margin-left:-6.5%;
+    background-color: aliceblue;
+    margin-top:20%;
+    margin-bottom: 5%;
+    transition-duration: 1s;
+}
+.second{
+    z-index: 3;
+    opacity: 0.7;
+    color: rgb(34, 31, 31);
+    border-radius:20px 40px;
+    height:150px;
+    width: 220px;
+    margin-left:10%;
+    margin-top:20%;
+    margin-bottom: 3%;
+    transition-duration: 1s;
+}
+img{
+  border-radius: 20px 40px;
+}
+h5{
+    opacity:1;
+    transition-duration: 1s;
+    letter-spacing: 4px;
+    font-size: 20px;
+    color: aliceblue;
+    margin-top: -60%;
+    margin-left: 10%;
+}
+h6{
+    opacity: 0;
+    transition-duration: 1s;
+    letter-spacing: 4px;
+    font-size: 20px;
+    text-align: right;
+    margin-top: -55%;
+    margin-right: 10%;
+    color: aliceblue;
+}
+figcaption{
+    font-size: 13px;
+    margin-top: 0;
+}
+
+.first:hover{
+ opacity:1;
+ transition-duration: 1s;
+}
+.second:hover{
+    opacity:1;
+    transition-duration: 1s;
+}
+.second:hover h5{
+    transition-duration: 1s;
+    opacity:0;
+}
+.second:hover h6{
+    transition-duration: 1s;
+    opacity:1;
+}
+
+
+h2{
+  transition-duration: 1s;
+  color:#fff;
+  font-family: sans-serif;
+  text-align:center;
+  font-size:100px;
+  font-weight:100;
+  bottom:40px;
+  margin-left: 250px;
+  margin-top: -250px;
+  opacity:0.1;
+  width: 100%;
+  cursor: pointer;
+}
+h2:hover{
+  opacity:0.7;
+  transition-duration: 2s;
+}
+a:link{
+ text-decoration: none;
+}
+a:visited{
+    text-decoration: none;
+    
+}

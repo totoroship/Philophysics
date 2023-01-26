@@ -1,0 +1,262 @@
+@import url("https://fonts.googleapis.com/css?family=Pathway Gothic One");
+/* Fonts at: https://www.google.com/fonts */
+/* Colors */
+ body {
+	 background: linear-gradient(135deg, #3e4777 0%, #f46e6e 100%, #3e4777 0%);
+	 margin: 0;
+	 width: 100%;
+	 height:930vh;
+	 display: flex;
+	 align-items:flex-start;
+	 justify-content: center;
+}
+html{
+	overflow-x: hidden;
+}
+p{
+    font-size: 100px;
+    color: #d4afaf;
+    position: absolute;
+    letter-spacing: -20px;
+    margin-top: 2%;
+    z-index: 3;
+    opacity: 0;
+}
+ span {
+	 font-family: "Pathway Gothic One", sans-serif;
+	 font-size: 100px;
+	 position: relative;
+	 letter-spacing: -2px;
+	 color: #f46e6e;
+	 margin-top: 3%;
+}
+ span:before {
+	 content: '';
+	 height: 1px;
+	 position: absolute;
+	 bottom: 1%;
+	 background: #f46e6e;
+	 width: 0%;
+	 animation: voila 3s forwards linear;
+}
+ span:nth-child(2) {
+	 opacity: 0.8;
+}
+ span:nth-child(3) {
+	 opacity: 0.63;
+}
+.title{
+	margin-left: 10%;
+}
+ @keyframes voila {
+	 to {
+		 width: 100%;
+	}
+}
+h5{
+	position:absolute;
+	color: aliceblue;
+	font-weight: 100;
+opacity: 0.4;
+	transition-duration: 2s;
+ font-size: 20px;
+ margin-top: 1.6%;
+ margin-left: 1%;
+ z-index: 5;
+}
+.hom{
+
+    position: absolute;
+    margin-left: -6.5%;
+    margin-top:1.7%;
+   z-index: 7;
+
+}
+
+h5:hover{
+	opacity: 0.9;
+	
+}
+h5:before,
+h5:after{
+  content:"";
+  position: absolute;
+  height: 0.7px;
+  width: 0px;
+  background:#ffffff;
+  transition:300ms;
+  -webkit-transition:1s;
+  -ms-transition:1s;
+  opacity:0.3;
+  left:50%;
+}
+
+h5:before{
+  bottom:0;
+}
+
+h5:after{
+  top:0;
+}
+
+h5:hover{
+  letter-spacing:2px;
+  transition-duration: 2s;
+}
+
+h5:hover:before,
+h5:hover:after{
+  width: 97%;
+  left:0;
+}
+a{
+	text-decoration: none;
+}
+
+
+.article{
+    background-color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.3);
+    height: 790%;
+    width: 76%;
+    margin-top: 14%;
+    position: absolute;
+    border-radius: 40px;
+}
+.cont{
+    position: relative;
+}
+
+h3{
+    color: #d4afaf;
+    margin-top: 4%;
+    font-size: 65px;
+    margin-left: 40px;
+    margin-bottom: 0;
+  }
+  h4{
+      color: #ffffff;
+      letter-spacing: 6px;
+      margin-left:39px;
+      margin-top: 0;
+      font-size: 20px;
+  }
+
+  img{
+    border-radius: 10px;
+    margin-left: 14%;
+    margin-top: 5%;
+   
+  }
+
+  .Artl1{
+    position: absolute;
+	  border:10px solid rgba(191, 173, 206, 0.4);
+  	border-radius: 50%;
+	  width: 350px;
+    height: 350px;
+	  margin-top: 10%;
+	  display:inline-block;
+	  margin-left: 0%;
+  
+    transition-duration: 1s;
+    text-align: center;
+    animation: bounce 0.7s 0s infinite ease-out alternate; 
+  }
+  .Artl1 h2{
+    color: rgba(255, 255, 255, 0.3);
+    font-size: 43px;
+    margin-top: 32%;
+    transition-duration: 1s;
+    margin-right: 0%;
+  }
+ .Artl1 :hover{
+    transition-duration: 1s;
+    letter-spacing: 4px;
+	   color: rgba(255, 255, 255, 0.7);
+  }
+  h6{
+    color: rgba(255, 255, 255, 0.3);
+    transition-duration: 1s;
+    font-size: 20px;
+    margin-top: -7%;
+    cursor: pointer;
+  }
+  
+.Artl1:hover{
+	animation-play-state: paused;
+  background-color: rgba(93, 85, 167, 0.37);;
+}
+ 
+  @keyframes bounce {
+    from{
+      transform:translateY(30px);
+  
+    }
+    to{
+      transform:translateY(-20px);
+    }
+    
+  }
+  a{
+    text-decoration: none;
+  }
+
+
+
+  
+  .Artl2{
+    position: absolute;
+    border:10px solid rgba(174, 175, 116, 0.4);
+  	border-radius: 50%;
+	  width: 520px;
+    height: 520px;
+	  margin-top: 20%;
+	  display:inline-block;
+	  margin-left: 50%;
+  
+    transition-duration: 1s;
+    text-align: center;
+    animation: bounce 0.7s 0.5s infinite ease-out alternate; 
+  }
+  .Artl2 h2{
+    color: rgba(255, 255, 255, 0.3);
+    font-size: 43px;
+    margin-top: 32%;
+    transition-duration: 1s;
+    margin-right: 0%;
+  }
+ .Artl2 :hover{
+    transition-duration: 1s;
+    letter-spacing: 4px;
+	   color: rgba(255, 255, 255, 0.7);
+  }
+.Artl2 h6{
+    color: rgba(255, 255, 255, 0.3);
+    transition-duration: 1s;
+    font-size: 20px;
+    margin-top: -7%;
+    cursor: pointer;
+  }
+  
+.Artl2:hover{
+	animation-play-state: paused;
+  background-color: rgba(185, 189, 131, 0.37);
+}
+
+.circle{
+  width: 120px;
+  height: 120px;
+  position: absolute;
+  margin-top: 50%;
+  margin-left: 17%;
+  border-radius: 50%;
+  animation: bounce 0.7s 0.8s infinite ease-out alternate; 
+  background-color: rgba(146, 90, 141, 0.37);
+  transition-duration: 1s;
+}
+.circle:hover{
+  animation-play-state: paused;
+  background-color: rgba(71, 65, 77, 0.37);
+  transition-duration: 1s;
+}
