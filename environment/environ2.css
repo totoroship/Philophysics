@@ -1,0 +1,147 @@
+@import 'https://fonts.googleapis.com/css?family=Oswald';
+html, body {
+  background: #005C97;
+  background: linear-gradient(to bottom, #536f81, navy);
+  height: 100%;
+  width: 100%;
+  display: flex;
+  font-family: "Oswald", sans-serif;
+
+  overflow: hidden;
+
+}
+
+.water-fill {
+  animation: wave 0.7s infinite linear, fill-up 10s infinite ease-out alternate;
+}
+.wave{
+  letter-spacing: 6px;
+    z-index: 1;
+    justify-content: center;
+    margin-top: 5%;
+    height: 100px;
+    width:100px;
+    margin-left: 5%;
+}
+.title{
+  letter-spacing: 6px;
+    z-index: 2;
+    text-align: left;
+    margin-top: 17%;
+    margin-left: 0px;
+    justify-content: left;
+}
+.first{
+   transition-duration: 1s;
+    z-index: 3;
+    opacity: 0.65;
+    color: rgb(34, 31, 31);
+    border-radius:20px 40px;
+    height: 300px;
+    width: 300px;
+    margin-left:2%;
+    margin-top:20%;
+}
+
+.first:hover{
+    transition-duration: 1s;
+    opacity: 0.85;
+}
+
+.first:hover h3{
+  transition-duration: 1s;
+  opacity:0;
+}
+.first:hover h4{
+  transition-duration: 1s;
+  opacity:1;
+}
+.first:hover h5{
+  transition-duration: 1s;
+  opacity:1;
+}
+img{
+  position: absolute;
+  border-radius: 20px 40px;
+}
+h3{ 
+  opacity: 1;  
+  transition-duration: 1s;
+  z-index: 1;
+  letter-spacing: 6px;
+  font-size: 40px;
+  position: relative;
+  margin-left: 20px;
+  color: aliceblue;
+  margin-top: 20px;
+}
+h4{
+  opacity: 0;
+  transition-duration: 1s;
+  z-index: 1;
+  letter-spacing: 4px;
+  font-size: 35px;
+  position: absolute;
+  margin-left: 80px;
+  color: aliceblue;
+  margin-top: -17%;
+  text-align: right;
+  line-height: 70px;
+}
+h5{
+  opacity: 0;
+  transition-duration: 1s;
+  z-index: 1;
+  letter-spacing: 4px;
+  font-size: 35px;
+  position: absolute;
+  margin-left: 2%;
+  color: aliceblue;
+  margin-top: -17%;
+  text-align: right;
+  line-height: 70px;
+}
+@keyframes wave {
+  0% {
+    x: -400px;
+  }
+  100% {
+    x: 0;
+  }
+}
+@keyframes fill-up {
+  0% {
+    height: 0;
+    y: 130px;
+  }
+  100% {
+    height: 160px;
+    y: -30px;
+  }
+}
+
+h2{
+  transition-duration: 1s;
+  color:#fff;
+  font-family: sans-serif;
+  text-align:center;
+  font-size:100px;
+  font-weight:100;
+  bottom:40px;
+  margin-left: 250px;
+  margin-top: -250px;
+  opacity:0.1;
+  width: 100%;
+  cursor: pointer;
+}
+h2:hover{
+  opacity:0.7;
+  transition-duration: 2s;
+}
+a:link{
+  text-decoration: none;
+ }
+ a:visited{
+     text-decoration: none;
+     
+ }

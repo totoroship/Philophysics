@@ -1,0 +1,232 @@
+* {
+  margin:0;
+  padding:0;
+
+}
+
+body{
+  background: #000;
+  width: 100%;
+  height: 100%;
+}
+.first{
+  position: absolute;
+  left:50%;
+  top:20%;
+  transform:translate(-50%,-50%);
+}
+h1{
+  font-size:60px;
+  font-weight:bold;
+  font-family: 'Montserrat', sans-serif;
+  text-align:center;
+  color:#ffd800;
+  letter-spacing:0px;
+  transition:1s;
+  -webkit-transition:1s;
+  -ms-transition:1s;
+  position: relative;
+  padding:10px;
+  letter-spacing: 30px;
+  cursor:default;
+}
+
+.first h2{
+  color:#fff;
+  font-family: serif, cursive;
+  text-align:center;
+  font-size:100px;
+  font-weight:100;
+  bottom:40px;
+  position: absolute;
+  transition:2s;
+  -webkit-transition:2s;
+  -ms-transition:2s;
+  opacity:0.1;
+  width: 100%;
+  cursor: pointer;
+}
+.first h2:hover{
+ opacity: 0.8;
+}
+
+.title{
+  position: absolute;
+  left:30%;
+  top:37%;
+  transform:translate(-50%,-50%);
+  text-align:left;
+}
+.title3{
+  position: absolute;
+  left:50%;
+  top:37%;
+  transform:translate(-50%,-50%);
+  text-align:left;
+}
+.title2{
+  position: absolute;
+  left:70%;
+  top:37%;
+  transform:translate(-50%,-50%);
+  text-align:left;
+}
+h3{
+  font-size:30px;
+  font-family: 'Montserrat', sans-serif;
+  text-align:center;
+  color:#ffd800;
+  letter-spacing:5px;
+  position: relative;
+  display: block;
+  padding:10px;
+  cursor: default;
+}
+
+.second{
+  position: absolute;
+  left:20%;
+  top:55%;
+  transform:translate(-50%,-50%);
+}
+.second2{
+  position: absolute;
+  left:20%;
+  top:70%;
+  transform:translate(-50%,-50%);
+}
+.second3{
+  position: absolute;
+  left:20%;
+  top:85%;
+  transform:translate(-50%,-50%);
+  margin-bottom: 0%;
+}
+.third{
+  position: absolute;
+  left:50%;
+  top:55%;
+  transform:translate(-50%,-50%);
+}
+.third2{
+  position: absolute;
+  left:50%;
+  top:70%;
+  transform:translate(-50%,-50%);
+}
+.third3{
+  position: absolute;
+  left:50%;
+  top:85%;
+  transform:translate(-50%,-50%);
+}
+
+.fourth{
+  position: absolute;
+  left: 74%;
+  top:55%;
+  transform:translate(-13%,-50%);
+}
+.fourth2{
+  position: absolute;
+  left: 81%;
+  top:70%;
+  transform:translate(-50%,-50%);
+}
+.fourth3{
+  position: absolute;
+  left: 82%;
+  top:86%;
+  animation: rotateP 3s linear infinite;
+  transform-origin: 50% 50%;
+}
+h4{
+  font-size:23px;
+  font-weight:bold;
+  font-family: 'Montserrat', sans-serif;
+  text-align:center;
+  color:#ffd800;
+  letter-spacing:0px;
+  transition:1s;
+  -webkit-transition:1s;
+  -ms-transition:1s;
+  position: relative;
+  padding:6px;
+}
+p{
+  font-size:48px;
+  font-weight:bold;
+  font-family: 'Montserrat', sans-serif;
+  text-align:center;
+  color:#ffd800;
+  transition:1s;
+  -webkit-transition:1s;
+  -ms-transition:1s;
+  position: relative;
+  padding:2px;
+}
+
+h4:before,
+h4:after{
+  content:"";
+  position: absolute;
+  height: 1px;
+  width: 0px;
+  background:#ffd800;
+  transition:300ms;
+  -webkit-transition:1s;
+  -ms-transition:1s;
+  opacity:0.3;
+  left:50%;
+}
+
+h4:before{
+  bottom:0;
+}
+
+h4:after{
+  top:0;
+}
+
+h4:hover{
+  letter-spacing:3px;
+}
+
+h4:hover:before,
+h4:hover:after{
+  width: 97%;
+  opacity:0.7;
+  left:0;
+
+}
+h4:hover ~ h5{
+  opacity:0;
+}
+
+h5{
+  color:#ffd800;
+  font-family:sans-serif;
+  text-align:center;
+  font-size:20px;
+  top:40px;
+  position: absolute;
+  transition:0.7s;
+  -webkit-transition:0.7s;
+  -ms-transition:1s;
+  opacity:0.8;
+  width: 100%;
+}
+a{
+  text-decoration: none;
+  color: #fff;
+
+}
+
+@keyframes rotateP {
+  from {
+    transform:translate(-50%, -50%) rotate(0);
+}
+to {
+    transform:translate(-50%, -50%) rotate(360deg);
+}
+}
